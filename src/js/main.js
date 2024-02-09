@@ -1,11 +1,10 @@
-// Import our custom CSS
-import '../scss/styles.scss';
+// Импортируйте наш пользовательский CSS
+import '../scss/styles.scss'
 
-// Import only the Bootstrap components we need
-import { Popover } from 'bootstrap';
+// Импортируйте весь JS Bootstrap
+import * as bootstrap from 'bootstrap'
 
-// Create an example popover
-document.querySelectorAll('[data-bs-toggle="popover"]')
-  .forEach(popover => {
-    new Popover(popover)
-  })
+import Alert from 'bootstrap/js/dist/alert'
+
+// или укажите, какие плагины вам нужны:
+import { Tooltip, Toast, Popover } from 'bootstrap'
